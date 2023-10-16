@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package homepage;
 
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 
 public class aboutpage extends JFrame {
     JButton jbtn_log,ad,doc,pat,phar;
@@ -72,10 +66,10 @@ public class aboutpage extends JFrame {
          head.setForeground(Color.decode("#29aae1"));
         p2.add(head);
          
-        String text="<html><p> SKCET memorial hospital has emerged as South India’s foremost integrated healthcare services provider and has a robust presence across the healthcare ecosystem, including Hospitals, Pharmacies, Primary Care & Diagnostic Clinics and several retail health models. The Group also has Telemedicine facilities across several states, Health Insurance Services, International Projects Consultancy, Medical Colleges, MEd varsity for E-Learning, Colleges of Nursing and Hospital Management and a Research Foundation.\n" +
-"The cornerstones of SKCET memorial’s legacy are its unstinting focus on clinical excellence, affordable costs, modern technology and forward-looking research & academics. SKCET memorial was among the first few hospitals in the India to leverage technology to facilitate seamless healthcare delivery.   \n" +
-"As a responsible corporate citizen, SKCET memorial Hospitals takes the spirit of leadership well beyond business and has embraced the responsibility of keeping India healthy. Recognizing that Non Communicable Diseases (NCDs) are the greatest threat to the nation, SKCET memorial Hospitals is continuously educating people about preventive healthcare as the key to wellness. Likewise, the “Billion Hearts Beating Foundation” endeavors to keep Indians heart-healthy.\n" +
-"SKCET memorial Hospitals has championed numerous social initiatives – to cite a few which assist underprivileged children – SACHi (Save a Child’s Heart Initiative) which screens and provides pediatric cardiac care for congenital heart diseases, SAHI (Society to Aid the Hearing Impaired) and the CURE Foundation focused on cancer care. To introduce population health into the Indian narrative, It aims to provide “holistic healthcare” for the entire community starting from birth, through one’s journey into childhood, adolescence, adulthood and old age.</p></html>";
+        String text="<html><p> Mussie Central Hospital has emerged as Ethiopia's foremost integrated healthcare services provider and has a robust presence across the healthcare ecosystem, including Hospitals, Pharmacies, Primary Care & Diagnostic Clinics, and several retail health models. The Group also has Telemedicine facilities across several states, Health Insurance Services, International Projects Consultancy, Medical Colleges, MEd varsity for E-Learning, Colleges of Nursing and Hospital Management, and a Research Foundation.\n" +
+        "The cornerstones of Mussie Central's legacy are its unstinting focus on clinical excellence, affordable costs, modern technology, and forward-looking research & academics. Mussie Central was among the first few hospitals in Ethiopia to leverage technology to facilitate seamless healthcare delivery.   \n" +
+        "As a responsible corporate citizen, Mussie Central Hospital takes the spirit of leadership well beyond business and has embraced the responsibility of keeping the community healthy. Recognizing that Non-Communicable Diseases (NCDs) are the greatest threat to the nation, Mussie Central Hospital is continuously educating people about preventive healthcare as the key to wellness. Likewise, the “Billion Hearts Beating Foundation” endeavors to keep individuals heart-healthy.\n" +
+        "Mussie Central Hospital has championed numerous social initiatives – to cite a few which assist underprivileged children – SACHi (Save a Child’s Heart Initiative) which screens and provides pediatric cardiac care for congenital heart diseases, SAHI (Society to Aid the Hearing Impaired), and the CURE Foundation focused on cancer care. To introduce population health into the Ethiopian narrative, It aims to provide “holistic healthcare” for the entire community starting from birth, through one’s journey into childhood, adolescence, adulthood, and old age.</p></html>";
     
         JLabel para=new JLabel(text);
          para.setForeground(Color.black);
@@ -89,7 +83,7 @@ public class aboutpage extends JFrame {
    logo.setBounds(0,10,400,152);
         p1.add(logo);
        
-        hos=new JLabel("SKCET Memorial Hospital");
+        hos=new JLabel("Mussie Central Hospital");
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));
         hos.setBounds(24,163,350,50);
@@ -115,13 +109,13 @@ public class aboutpage extends JFrame {
         pharmacy.setFont(new Font(Font.SERIF,Font.BOLD,20));
         pharmacy.setBounds(510,360,130,100);
         
-        founder=new JLabel("Coimbatore, Tamil Nadu");
+        founder=new JLabel("Adama, Ethiopia");
         iph=new ImageIcon("img\\option\\ph.png");
         imail=new ImageIcon("img\\option\\mail.png");
         ph=new JLabel(iph);
         mail=new JLabel(imail);
-        tph=new JLabel("+91 9123456780");
-        tmail=new JLabel("skcethospital@gmail.com");
+        tph=new JLabel("+251 982846075");
+        tmail=new JLabel("mussiehospital@gmail.com");
         
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));

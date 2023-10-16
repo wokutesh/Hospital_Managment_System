@@ -1,51 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package admin;
 
 
-import Patient.PatientOption;
 import com.toedter.calendar.JDateChooser;
 import database.DatabaseOperation;
-import java.awt.Button;
 import java.awt.Checkbox;
 import java.awt.CheckboxGroup;
 import java.awt.Choice;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.HeadlessException;
-import java.awt.Image;
 import java.awt.Label;
-import java.awt.Panel;
 import java.awt.TextField;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
-import java.sql.Statement;
 import java.util.Date;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import java.util.Locale;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JSplitPane;
 public class regd extends Frame {
     Label doc_id,doc_name,l_mail,doc_mail,doc_phnno,doc_gender,doc_address,doc_qualification,doc_bloodgroup,doc_dateofjoin,npass,cpass,title;
     TextField tdoc_id,tdoc_name,tdoc_mail,tdoc_phno,tdoc_address,tdoc_dateofjoin,tdoc_qualification,tdoc_npass,tdoc_cpass;
@@ -309,13 +290,13 @@ public class regd extends Frame {
                     }
                     else{
                         Connection con=DatabaseOperation.getConnection();
-                        String query="insert into doctor_details values(?,?,?,?,?,?,?,?,?,?)";
+                        String query="insert into DOCTOR_DETAILS values(?,?,?,?,?,?,?,?,?,?)";
                         PreparedStatement pdmt=con.prepareStatement(query);
                         pdmt.setString(1,id);
                         pdmt.setString(2,name);
-                        pdmt.setString(3, email);
+                        pdmt.setString(3,email);
                         pdmt.setString(4,newpass);
-                        pdmt.setString(5, phnno);
+                        pdmt.setString(5,phnno);
                         pdmt.setString(6,address);
                         pdmt.setString(7,quali);
                         pdmt.setString(8,str_gen);

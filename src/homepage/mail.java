@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package homepage;
 
 import java.awt.*;
@@ -73,7 +68,7 @@ public class mail extends JFrame {
    logo.setBounds(0,10,400,152);
         p1.add(logo);
        
-        hos=new JLabel("SKCET Memorial Hospital");
+        hos=new JLabel("Mussie Central Hospital");
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));
         hos.setBounds(24,163,350,50);
@@ -90,7 +85,7 @@ public class mail extends JFrame {
         m_subject = new JTextField();
         m_message = new JTextField();
         
-        m_to.setText("skcethospital@gmail.com");
+        m_to.setText("mussiehospital@gmail.com");
         
         title=new JLabel("Send us your query");
         title.setFont(new Font( Font.DIALOG,Font.BOLD, 22));

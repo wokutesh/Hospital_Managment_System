@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package homepage;
 
 
@@ -25,7 +20,7 @@ public class contactpage extends JFrame {
         p2=new JPanel(null);
         jsp=new JSplitPane();
         co.add(jsp);
-        mail= new JButton("skcethospital@gmail.com");
+        mail= new JButton("mussiehospital@gmail.com");
         jsp.setDividerLocation(400);
         
         pl1=new JPanel(null);
@@ -77,7 +72,7 @@ public class contactpage extends JFrame {
          head.setForeground(Color.decode("#29aae1"));
         p2.add(head);
          
-        String text="<html><p><center> ADDRESS <br> 239,SKCET memorial hospital, Teynampet, Chennai-29.<br><br>" + " Phone Number<br> +91 9455924591 (7 lines) <br><br>" + "E-mail ID<br><br></center>.</p></html>";
+        String text="<html><p><center> ADDRESS <br> 239,Mussie Central  hospital, Adama, Ethiopia.<br><br>" + " Phone Number<br> +251 982846075 (7 lines) <br><br>" + "E-mail ID<br><br></center>.</p></html>";
     
         JLabel para=new JLabel(text);
          para.setForeground(Color.black);
@@ -91,7 +86,7 @@ public class contactpage extends JFrame {
    logo.setBounds(0,10,400,152);
         p1.add(logo);
        
-        hos=new JLabel("SKCET Memorial Hospital");
+        hos=new JLabel("Mussie Central Hospital");
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));
         hos.setBounds(24,163,350,50);
@@ -117,13 +112,13 @@ public class contactpage extends JFrame {
         pharmacy.setFont(new Font(Font.SERIF,Font.BOLD,20));
         pharmacy.setBounds(510,360,130,100);
         
-        founder=new JLabel("Coimbatore, Tamil Nadu");
+        founder=new JLabel("Adama, Ethiopia");
         iph=new ImageIcon("img\\option\\ph.png");
         imail=new ImageIcon("img\\option\\mail.png");
         ph=new JLabel(iph);
         lmail=new JLabel(imail);
-        tph=new JLabel("+91 9123456780");
-        tmail=new JLabel("skcethospital@gmail.com");
+        tph=new JLabel("+251 982846075");
+        tmail=new JLabel("mussiehospital@gmail.com");
         
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));

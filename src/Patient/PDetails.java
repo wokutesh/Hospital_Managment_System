@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.sql.*;
-import java.util.Random;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class PDetails extends JFrame {

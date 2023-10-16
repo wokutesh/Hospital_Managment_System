@@ -117,6 +117,6 @@ CONSTRAINT fk_pharmacy FOREIGN KEY(ID) references patient(ID)
 
 //ADMIN
  create table admin(id varchar(10),name varchar(15),email varchar(25),password varchar(15));
- insert into admin(id,name,email,password) values('GHSH123','Veera','veera4721','abc123');
- insert into admin(id,name,email,password) values('GHSH324','Sara','saramhd@gmail.com','ABcd@1111');
+ insert into admin(id,name,email,password) values('GHSH123','salew','sale@gmail.com','abc123');
+ insert into admin(id,name,email,password) values('GHSH324','Sara','sara@gmail.com','ABcd@1111');
 

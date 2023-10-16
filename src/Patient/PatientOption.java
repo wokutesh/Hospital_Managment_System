@@ -50,12 +50,12 @@ public class PatientOption extends JFrame{
         logo.setBounds(0,10,400,152);
         p1.add(logo);
         
-        hos=new JLabel("SKCET Memorial Hospital");
-        founder=new JLabel("Coimbatore, Tamil Nadu");
+        hos=new JLabel("Mussie Memorial Hospital");
+        founder=new JLabel("Adama, Ethiopia");
         ph=new JLabel(iph);
         mail=new JLabel(imail);
-        tph=new JLabel("+91 9123456780");
-        tmail=new JLabel("skcethospital@gmail.com");
+        tph=new JLabel("+251 982846075");
+        tmail=new JLabel("mussiehospital@gmail.com");
         
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));

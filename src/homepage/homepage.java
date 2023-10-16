@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package homepage;
 
 import admin.Admin;
@@ -11,7 +6,6 @@ import Pharmacy.Pharmacy;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import Patient.PatientOption;
 
 public class homepage extends JFrame {
@@ -66,19 +60,19 @@ public class homepage extends JFrame {
    logo.setBounds(0,10,400,152);
         p1.add(logo);
        
-        hos=new JLabel("SKCET Memorial Hospital");
+        hos=new JLabel("Mussie Central Hospital");
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));
         hos.setBounds(24,163,350,50);
          p1.add(hos);
         
-        founder=new JLabel("Coimbatore, Tamil Nadu");
+        founder=new JLabel("Adama, Ethiopia");
         iph=new ImageIcon("img\\option\\ph.png");
         imail=new ImageIcon("img\\option\\mail.png");
         ph=new JLabel(iph);
         mail=new JLabel(imail);
-        tph=new JLabel("+91 9123456780");
-        tmail=new JLabel("skcethospital@gmail.com");
+        tph=new JLabel("+251 982846075");
+        tmail=new JLabel("mussiehospital@gmail.com");
         
         hos.setForeground(Color.white);
         hos.setFont(new Font("Arial Black",Font.BOLD,22));

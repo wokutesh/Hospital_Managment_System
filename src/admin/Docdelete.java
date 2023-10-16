@@ -1,25 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package admin;
 
-import Doctor.LoginForm;
 import database.DatabaseOperation;
-import java.awt.BorderLayout;
 import java.awt.Color;
    import java.awt.Container;
 import java.awt.Cursor;
-import java.awt.FlowLayout;
 import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.ImageIcon;
@@ -113,9 +101,10 @@ public class Docdelete extends JFrame implements ActionListener{
                    ResultSet rst=pstmt.executeQuery();
 
                    while(rst.next()){
-
-                       jcb_eid.addItem(rst.getInt("id"));
+                        System.out.println("yes");
+                       jcb_eid.addItem(1);
                    }
+                   System.out.println("no");
             }
             catch(Exception ex){
                 JOptionPane.showMessageDialog(this, " ERRORRR! "+ ex.toString());
