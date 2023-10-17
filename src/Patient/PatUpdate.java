@@ -177,7 +177,7 @@ public class PatUpdate extends JFrame {
                 else if (dist_txt.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Please Enter your District!", "District", JOptionPane.ERROR_MESSAGE);
                 } //PHONE NUMBER:
-                else if (!Pattern.matches("^[789]\\d{9}$", phno_txt.getText())) {
+                else if (!Pattern.matches("^[79]\\d{8}$", phno_txt.getText())) {
                     JOptionPane.showMessageDialog(null, "Please enter a valid phone number", "Phone Number", JOptionPane.ERROR_MESSAGE);
                 } //BLOOD GROUP
                 else if (bldgrp_txt.getText().isEmpty()) {

@@ -25,7 +25,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import java.util.Random;
 import javax.swing.ButtonGroup;
 
 public class PatientReg extends JFrame implements ActionListener, ItemListener {
@@ -75,7 +74,7 @@ public class PatientReg extends JFrame implements ActionListener, ItemListener {
         gen_lbl = new JLabel("GENDER");
         bldgrp_lbl = new JLabel("BlOOD GROUP");
         address_lbl = new JLabel("ADDRESS");
-        dist_lbl = new JLabel("DISTRICT");
+        dist_lbl = new JLabel("Region");
         apoint_lbl = new JLabel("APOINTMENT DATE");
         symp_lbl = new JLabel("SYMPTOMS");
         doctName_lbl = new JLabel("DOCTOR");
@@ -98,13 +97,21 @@ public class PatientReg extends JFrame implements ActionListener, ItemListener {
 
         dist_jcb = new JComboBox();
         dist_jcb.addItem("-SELECT-");
-        dist_jcb.addItem("Chennai");
-        dist_jcb.addItem("Coimbatore");
-        dist_jcb.addItem("Erode");
-        dist_jcb.addItem("Tirunelveli");
-        dist_jcb.addItem("Madurai");
-        dist_jcb.addItem("Salem");
-        dist_jcb.addItem("Trichy");
+        dist_jcb.addItem("Addis Ababa");
+        dist_jcb.addItem("Afar");
+        dist_jcb.addItem("Amhara");
+        dist_jcb.addItem("Benishangul-Gumuz");
+        dist_jcb.addItem("Central Ethiopia");
+        dist_jcb.addItem("Dire Dawa");
+        dist_jcb.addItem("Gambela");
+        dist_jcb.addItem("Harari");
+        dist_jcb.addItem("Oromia");
+        dist_jcb.addItem("Sidama");
+        dist_jcb.addItem("Somali");
+        dist_jcb.addItem("South Ethiopia");
+        dist_jcb.addItem("South West Ethiopia Peoples");
+        dist_jcb.addItem("Tigray");
+        
 
         bldgrp_jcb = new JComboBox();
         bldgrp_jcb.addItem("-SELECT-");
@@ -324,7 +331,7 @@ public class PatientReg extends JFrame implements ActionListener, ItemListener {
             else if (Pattern.matches("-SELECT-", dist_jcb.getSelectedItem().toString())) {
                 JOptionPane.showMessageDialog(this, "Please select your District!", "District", JOptionPane.ERROR_MESSAGE);
             } //PHONE NUMBER:
-            else if (!Pattern.matches("^[789]\\d{9}$", phno_txt.getText().toString())) {
+            else if (!Pattern.matches("^[79]\\d{8}$", phno_txt.getText().toString())) {
                 JOptionPane.showMessageDialog(this, "Please enter a valid phone number", "Phone Number", JOptionPane.ERROR_MESSAGE);
             } //BLOOD GROUP
             else if (Pattern.matches("-SELECT-", bldgrp_jcb.getSelectedItem().toString())) {

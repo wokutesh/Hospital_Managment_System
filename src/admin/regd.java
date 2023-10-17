@@ -266,14 +266,14 @@ public class regd extends Frame {
                     else if(!Pattern.matches("^(.+)@(.+)$", email)){
                         JOptionPane.showMessageDialog(submit,"Invalid Email");
                     }
-                     else if(!Pattern.matches("[789]{1}[0-9]{9}", phnno)){
+                     else if(!Pattern.matches("[79]{1}[0-9]{8}", phnno)){
                         JOptionPane.showMessageDialog(submit,"Invalid Mobile Number");
                     }
                     else if(str_gen==null){
                         JOptionPane.showMessageDialog(submit,"Please select your Gender");
                     }
                     else if(Pattern.matches("---Select---", bgroup)){
-                        JOptionPane.showMessageDialog(submit,"Please select your Booldgroup");
+                        JOptionPane.showMessageDialog(submit,"Please select your Bloodgroup");
                     }
                     else if(!Pattern.matches("[a-zA-z\\s,]*", quali)){
                         JOptionPane.showMessageDialog(submit,"Invalid Qualification");
@@ -283,7 +283,7 @@ public class regd extends Frame {
                     }
              else if(!Pattern.matches("^(?=.*[0-9])"+ "(?=.*[a-z])(?=.*[A-Z])"+ "(?=.*[@#$%^&+=])"+ "(?=\\S+$).{8,20}$",newpass))
              {
-                   JOptionPane.showMessageDialog(submit,newpass);           
+                   JOptionPane.showMessageDialog(submit,"Include at least one digit (0-9), one lowercase letter (a-z), one uppercase letter (A-Z), and one special character from the set [@#$%^&+=]. Avoid using whitespace and ensure your password is between 8 and 20 characters in length.");           
                            }
                      else if(!newpass.equals(cpass)){
                         JOptionPane.showMessageDialog(submit,"Please enter the same characters");
@@ -305,7 +305,8 @@ public class regd extends Frame {
                         pdmt.executeUpdate();
                         JOptionPane.showMessageDialog(submit,"Registration Success!");
                         con.setAutoCommit(true);
-                        System.exit(0);
+                        new adminpage();
+                        setVisible(false);
                     }
                 }
                 catch(SQLIntegrityConstraintViolationException sq){
@@ -333,12 +334,6 @@ public class regd extends Frame {
             }
         });
     }
-  // public void paint(Graphics g){
-      
-        //Toolkit t=Toolkit.getDefaultToolkit();  
-       //doctor=t.getImage("C:\\Users\\Admin\\OneDrive\\Documents\\project\\doc1.jpg");
-       //g.drawImage(doctor, 30,55,this);  
-  // }
     public static void main(String[] args) {
         new regd();
     }

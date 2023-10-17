@@ -99,7 +99,7 @@ public class PharmacyID extends JFrame {
                 String query = "select * from medicine where medname='"+med[i]+"'";
                 ResultSet res = st.executeQuery(query);
                 while (res.next()) {
-                    price[i] = res.getString("rupees");
+                    price[i] = res.getString("price");
                 }
                 con.setAutoCommit(true);
             } catch (HeadlessException | ClassNotFoundException | NumberFormatException | SQLException ex) {

@@ -30,7 +30,7 @@ public class Appointments extends JFrame {
         co = getContentPane();
         setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setTitle("Rooms");
+        setTitle("Appointments");
         iback = new ImageIcon("img\\doctor\\back.png");
         back = new JButton(iback);
         iback.setImageObserver(back);

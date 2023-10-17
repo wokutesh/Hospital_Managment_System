@@ -102,9 +102,9 @@ public class Docdelete extends JFrame implements ActionListener{
 
                    while(rst.next()){
                         System.out.println("yes");
-                       jcb_eid.addItem(1);
+                       jcb_eid.addItem(rst.getInt("id"));
                    }
-                   System.out.println("no");
+                   
             }
             catch(Exception ex){
                 JOptionPane.showMessageDialog(this, " ERRORRR! "+ ex.toString());
@@ -124,7 +124,7 @@ public class Docdelete extends JFrame implements ActionListener{
         if(obj_source==jbtn_submit){
 
             try{
-                int    eid=Integer.parseInt(jcb_eid.getSelectedItem().toString());
+                int eid=Integer.parseInt(jcb_eid.getSelectedItem().toString());
 
                    Connection con=DatabaseOperation.getConnection();
                    String query="delete from doctor_details where id=?";
@@ -140,13 +140,6 @@ public class Docdelete extends JFrame implements ActionListener{
 
         }
     }
-  
-        
-      //public void paint(Graphics g){
-        //Toolkit t=Toolkit.getDefaultToolkit();  
-       //doc=t.getImage("C:\\Users\\Admin\\OneDrive\\Documents\\project\\doc1.jpg");
-       //g.drawImage(doc, 30,55,this);  
-  // }
 
     public static void main(String args[]){
         new Docdelete();

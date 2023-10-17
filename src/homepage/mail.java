@@ -169,7 +169,7 @@ public class mail extends JFrame {
         // TODO add your handling code here:
         String FromEmail = m_to.getText();
         String ToEmail = m_from.getText();
-        String ToEmailPassword = "ABCD1234!"; //your email password
+        String ToEmailPassword = "ABCD1234!"; 
         String Subjects = m_subject.getText(); 
         
         Properties properties = new Properties();
